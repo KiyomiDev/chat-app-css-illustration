@@ -13,5 +13,84 @@
     <title>Frontend Mentor | Chat app CSS illustration</title>
   </head>
   <body>
+    <!-- ==== START HERO SECTION === -->
+    <main class="hero-section">
+      <div class="container">
+        <!-- START PHONE BODY -->
+        <div class="phone-body">
+          <div class="camera"></div>
+          <!-- START CHAT APP -->
+          <div class="app-chat">
+            <div class="chat-top">
+              <div class="user-info-box">
+                <img src="images/avatar.jpg" alt="user photo" class="user-img" />
+                <div class="user-info">
+                  <h3 class="name">Samuel Green</h3>
+                  <p class="sub-heading">Available to Walk</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chat">
+              <!-- START MESSAGES -->
+              <div class="messages">
+                <div class="received-messages">
+                  <p class="received">That sounds great. I’d be happy with that.</p>
+                  <p class="received">
+                    Could you send over some pictures of your dog, please?
+                  </p>
+                </div>
+                <div class="sent-messages">
+                  <div class="sent">
+                    <img src="images/dog-image-1.jpg" alt="" />
+                    <img src="images/dog-image-2.jpg" alt="" />
+                    <img src="images/dog-image-3.jpg" alt="" />
+                  </div>
+                  <p class="sent">Here are a few pictures. She’s a happy girl!</p>
+                  <p class="sent">Can you make it?</p>
+                </div>
+                <p class="received">
+                  She looks so happy! The time we discussed works. How long shall
+                  I take her out for?
+                </p>
+              </div>
+              <div class="price-btn">
+                <label class="input-container"> 
+                  <input type="radio" name="price">
+                  30 minute walk <span class="price">$29</span>
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="price-btn">
+                <label class="input-container"> 
+                  <input type="radio" name="price">
+                  1 hour walk <span class="price">$49</span>
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <!-- END MESSAGES -->
+              <div class="typing-box">
+                <input type="text" placeholder="Type a message…">
+                <span class="send-btn"></span>
+              </div>
+            </div>
+          </div>
+          <!-- END CHAT APP -->
+        </div>
+        <!-- END PHONE BODY -->
+  
+        <div class="text-box">
+          <h1 class="main-heading">Simple booking</h1>
+          <p>
+            Stay in touch with our dog walkers through the chat interface. This
+            makes it easy to discuss arrangements and make bookings. Once the walk
+            has been completed you can rate your walker and book again all through
+            the chat.
+          </p>
+        </div>
+
+      </div>
+    </main>
+    <!-- ==== END HERO SECTION === -->
   </body>
 </html>
