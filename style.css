@@ -49,6 +49,17 @@ body {
   border-radius: 0 0 255px 255px; 
   background: rgb(233,66,255);
   background: linear-gradient(to bottom, rgba(233,66,255,1) 0%, rgba(136,56,255,1) 100%);
+  transform-origin: top;
+  animation: to-bottom 0.7s;
+}
+
+@keyframes to-bottom {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
 }
 
 @media (max-width: 48em) {
@@ -140,6 +151,16 @@ body {
   position: relative;
   z-index: 9999;
   overflow: hidden;
+  animation: left-to-center 0.7s;
+}
+
+@keyframes left-to-center {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .app-chat {
@@ -373,6 +394,16 @@ input:checked ~ .checkmark:after {
 .text-box {
   position: relative;
   z-index: 1;
+  animation: right-to-center 0.7s;
+}
+
+@keyframes right-to-center {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 @media (max-width: 48em) {
